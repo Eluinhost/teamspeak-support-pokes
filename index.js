@@ -25,7 +25,7 @@ const sendPokes = (bot, clid) => Promise
         }),
         bot._send('clientinfo', { clid }).then(({ client_nickname }) => config.supportMessage.replace('{{username}}', client_nickname))
     )
-    .then(([notifyIds, message]) => Promise.all(notifyIds.map(it => bot.sendPoke(it, message))))
+    .then(([notifyIds, message]) => Promise.all(notifyIds.map(it => bot.sendMessage(it, message))))
     .then(() => bot.sendPoke(clid, config.acknowledgeMessage));
 
 (new BotFactory())
