@@ -1,0 +1,17 @@
+{
+  "name": "teamspeak-support-pokes",
+  "version": "0.1.0",
+  "description": "Pokes relevent people when someone joins a channel",
+  "main": "./src/index.js",
+  "keywords": [
+    "teamspeak",
+    "bot"
+  ],
+  "author": "Eluinhost",
+  "license": "MIT",
+  "dependencies": {
+    "teamspeak-channel-squatter": "0.1.x",
+    "bluebird": "3.3.x",
+    "lodash": "4.12.x"
+  }
+}
